@@ -1,0 +1,95 @@
+/* Padroniza o cálculo de largura dos elementos */
+* {
+    box-sizing: border-box;
+}
+/* Configuração geral */
+body {
+    background-color: #f1f3f5;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Área principal */
+.content {
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Nome do Pokémon */
+#pokemonName {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+    font-size: clamp(1.3rem, 5vw, 2rem);
+}
+
+/* Imagem */
+#pokemonImage {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto 1.5rem;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+/* Títulos das seções */
+.content h2 {
+    color: #333;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #61e1ca;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* Informações */
+.content p {
+    background-color: #f5f6f7;
+    padding: 0.8rem 1rem;
+    border-radius: 0.6rem;
+    margin: 0.5rem 0;
+    color: #555;
+    text-transform: capitalize;
+}
+
+/* Lista de status */
+#pokemonStats {
+    list-style: none;
+    padding: 0;
+}
+
+#pokemonStats li {
+    background-color: #f5f6f7;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 0.6rem;
+    color: #444;
+    text-transform: capitalize;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .content {
+    padding: 1rem;
+    margin: 0.5rem auto;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+    #pokemonName {
+        font-size: 1.6rem;
+    }
+
+    #pokemonImage {
+        width: 200px;
+    }
+}
+
