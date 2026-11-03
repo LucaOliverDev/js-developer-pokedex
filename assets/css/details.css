@@ -18,6 +18,8 @@ body {
     padding: 2rem;
     border-radius: 1.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    height: auto; /* Garante que a altura é dinâmica */
+    overflow: hidden; /* Opcional: ajuda a conter elementos internos, ou remova se preferir */
 }
 
 /* Nome do Pokémon */
@@ -83,6 +85,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     max-width: 100%;
+    height: auto; /* Garante que continua dinâmico no mobile */
+    
 }
     #pokemonName {
         font-size: 1.6rem;
@@ -91,5 +95,10 @@ body {
     #pokemonImage {
         width: 200px;
     }
+
+    .content p,
+#pokemonStats li {
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+}
 }
 
